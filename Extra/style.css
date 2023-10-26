@@ -2,25 +2,50 @@
 body{
     overflow-x: hidden;
 }
-
 img:hover{
 color: rgb(0, 0, 0);
 opacity: 50%;
 cursor: pointer;
 }
-
 img {
     transition: all 0.3s ease; /* Add a transition for all properties with a 0.3s duration and ease timing function. */
 }
-
 /* Dark red hover effect on the text in the navbar */
 .navbar-nav .nav-link:hover {
     color: rgb(211, 0, 0) !important;
     transition: all 0.3s ease; /* Add a transition for all properties with a 0.3s duration and ease timing function. */
 }
-
 /* Dark red hover effect on the icons in the navbar */
 .navbar-nav .nav-link:hover .fa {
     color: rgb(211, 0, 0) !important;
     transition: all 0.3s ease; /* Add a transition for all properties with a 0.3s duration and ease timing function. */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* CSS for the logo */
+.logo {
+    max-width: 100%; /* Ensure the logo doesn't exceed its container's width */
+}
+
+/* CSS for the form container */
+.login-container {
+    max-width: 400px; /* Set a maximum width for the form container */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 80%; /* Reduce the logo size */
+    }
+    .login-container {
+        max-width: 90%; /* Reduce the form container size */
+    }
 }
