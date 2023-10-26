@@ -1,16 +1,26 @@
-nav{
-    background-color: black !important;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 
 body{
-    background-color: black !important;
     overflow-x: hidden;
 }
 
-footer{
-    background-color: black;
+img:hover{
+color: rgb(0, 0, 0);
+opacity: 50%;
+cursor: pointer;
+}
+
+img {
+    transition: all 0.3s ease; /* Add a transition for all properties with a 0.3s duration and ease timing function. */
+}
+
+/* Dark red hover effect on the text in the navbar */
+.navbar-nav .nav-link:hover {
+    color: rgb(211, 0, 0) !important;
+    transition: all 0.3s ease; /* Add a transition for all properties with a 0.3s duration and ease timing function. */
+}
+
+/* Dark red hover effect on the icons in the navbar */
+.navbar-nav .nav-link:hover .fa {
+    color: rgb(211, 0, 0) !important;
+    transition: all 0.3s ease; /* Add a transition for all properties with a 0.3s duration and ease timing function. */
 }
